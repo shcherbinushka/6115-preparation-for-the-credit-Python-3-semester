@@ -8,6 +8,5 @@ def choise_sort(array):
     N = len(array)
     for pos in range(0, N - 1): ## pos + 1 - индекс элемента, с которого начинается поиск минимума
         for k in range(pos + 1, N):
-            for k in range(pos + 1, N):
-                if array[k] < array[pos]:
-                    array[k], array[pos] = array[pos], array[k]
+            if array[k] < array[pos]:
+                array[k], array[pos] = array[pos], array[k]
