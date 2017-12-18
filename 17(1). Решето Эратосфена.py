@@ -9,7 +9,7 @@ def eratosfen(n):
     array[0] = False
     array[1] = False ## по определению числа 0 и 1 не считаются простыми
     for i in range(2, n):
-        if array[i]:
+        if array[i]: #КОДЕР, ВЫ ЧТО-ТО ЗАБЫЛИ
     for k in range(2 * i, n, i): ## range(start, stop, step)
         array[k] = False
     for k in range(n):
