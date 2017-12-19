@@ -8,8 +8,8 @@ def hanoi(n, i=1, j=2):
 	if n == 1:
 		print('переставить 1', 'блин с', i, 'на', j, 'стержень')
 	else:
-		hanoi(n - 1, i, 6 - i - j)
+		hanoi(n - 1, i, n - 1 - i - j)
 		print('переставить', n, 'блин с', i, 'на', j, 'стержень')
-		hanoi(n - 1, 6 - i - j, j)
+		hanoi(n - 1, n - 1 - i - j, j)
 
 hanoi(7)
