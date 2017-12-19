@@ -12,7 +12,7 @@ def find(number, A):
             break
     return flag
 
-def generate_permutetions(N:int, M:int = -1, prefix = None):
+def generate_permutations(N:int, M:int = -1, prefix = None):
     """ Генерация всех перестановок N чисел в M позициях с префиксом prefix
     """
     M = M if M != -1 else N  # по умолчанию N чисел в N позициях
@@ -28,7 +28,7 @@ def generate_permutetions(N:int, M:int = -1, prefix = None):
         if find(number, prefix):
             continue
         prefix.append(number)
-        generate_permutetions(N, M -1,  prefix)
+        generate_permutations(N, M -1,  prefix)
         prefix.pop()
 
-#generate_permutetions(3, 3)
+#generate_permutations(3, 3)
